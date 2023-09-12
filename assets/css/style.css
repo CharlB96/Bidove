@@ -13,7 +13,6 @@ body {
 
 .container {
   text-align: center;
-  background-color: #fff;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -113,21 +112,22 @@ a:hover {
 }
 
 #home-screen {
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 20px;
+  margin: 0;
 }
 
 /*Courses screen styles*/
 
-#course-header {
+.top-of-page {
   background-color: #333;
   padding: 20px 0;
 }
 
-#gcse-subjects {
+.title-heading {
   text-align: center;
   color: #fff;
   font-size: 36px;
@@ -206,6 +206,44 @@ a:hover {
 }
 
 .end-test-button:hover {
+  background-color: #555;
+}
+
+/*Lesson page styles*/
+#circuits-body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+#start-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+#start-page h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#start-page button {
+  padding: 10px 20px;
+  font-size: 24px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 300px; /* Adjust the width as needed */
+}
+
+#start-page button:hover {
   background-color: #555;
 }
 
