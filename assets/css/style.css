@@ -1,7 +1,6 @@
 /*General styles*/
 
-html,
-body {
+html {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -10,9 +9,6 @@ body {
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f2f2f2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .container {
@@ -30,6 +26,15 @@ h1 {
 }
 
 /*Login screens styles (index.html)*/
+#login-screen {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 form {
   max-width: 300px;
   margin: 0 auto;
@@ -108,9 +113,6 @@ a:hover {
 }
 
 #home-screen {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2f2f2;
-  margin: 0;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -123,6 +125,14 @@ a:hover {
 #course-header {
   background-color: #333;
   padding: 20px 0;
+}
+
+#gcse-subjects {
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  margin: 0;
+  letter-spacing: 2px;
 }
 
 .course-container {
