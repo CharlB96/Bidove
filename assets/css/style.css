@@ -247,6 +247,72 @@ a:hover {
   background-color: #555;
 }
 
+/*Game styles*/
+.game-body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+.game-title {
+  text-align: center;
+  color: #333;
+}
+
+.game-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.question {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-container input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
 /*Media queries for larger screens (Max width of 768px)*/
 
 @media (max-width: 768px) {
