@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Circuits - The Basics Revision Corner</title>
+
+</head>
+
+<body>
+    <header class="revision-header">
+        <div class="revision-container">
+            <h1 class="revision-title">Circuits - The Basics Revision Corner</h1>
+        </div>
+    </header>
+
+    <div class="revision-container video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/?v=R3hdaLpq2AA&list=PLidqqIGKox7UVC-8WC9djoeBzwxPeXph7&index=14" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="revision-container pdf-container">
+        <div class="pdf-box" onclick="openPDF('path_to_first_pdf.pdf')">
+            <img src="path_to_first_pdf_thumbnail.jpg" alt="First PDF Title">
+        </div>
+        <div class="pdf-box" onclick="openPDF('path_to_second_pdf.pdf')">
+            <img src="path_to_second_pdf_thumbnail.jpg" alt="Second PDF Title">
+        </div>
+        <div class="pdf-box" onclick="openPDF('path_to_third_pdf.pdf')">
+            <img src="path_to_third_pdf_thumbnail.jpg" alt="Third PDF Title">
+        </div>
+    </div>
+
+    <div class="pdf-modal" id="pdfModal">
+        <span class="close" onclick="closePDF()">&times;</span>
+        <iframe id="pdfDisplay" src="" frameborder="0"></iframe>
+    </div>
+
+    <script>
+        function openPDF(pdfURL) {
+            const pdfModal = document.getElementById('pdfModal');
+            const pdfDisplay = document.getElementById('pdfDisplay');
+            pdfModal.style.display = 'block';
+            pdfDisplay.src = pdfURL;
+        }
+
+        function closePDF() {
+            const pdfModal = document.getElementById('pdfModal');
+            pdfModal.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
