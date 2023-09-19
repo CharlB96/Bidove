@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------General styles*/
 
 html {
-  height: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
 }
@@ -9,6 +9,7 @@ html {
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f2f2f2;
+  width: fit-content;
 }
 
 .container {
@@ -125,6 +126,7 @@ a:hover {
 .top-of-page {
   background-color: #333;
   padding: 20px 0;
+  width: 100%;
 }
 
 .title-heading {
@@ -240,7 +242,8 @@ a:hover {
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 10px;
-  width: 300px; /* Adjust the width as needed */
+  width: 300px;
+  /* Adjust the width as needed */
 }
 
 #start-page button:hover {
@@ -488,10 +491,14 @@ eq-title {
 }
 
 @keyframes flash-red-animation {
-  0%, 50% {
+
+  0%,
+  50% {
     background-color: #fff;
   }
-  25%, 75% {
+
+  25%,
+  75% {
     background-color: red;
   }
 }
@@ -501,9 +508,51 @@ eq-title {
 }
 
 /*----------------------------------------------Media queries for larger screens (Max width of 768px)*/
-
 @media (max-width: 768px) {
+
   h1 {
     font-size: 28px;
   }
+
 }
+
+@media screen and (max-width: 768px) {
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    max-width: fit-content;
+  }
+
+  .grid li {
+    position: relative;
+    width: 250px;
+    height: 150px;
+  }
+
+  .course-container {
+    max-width: 768px;
+    align-self: center;
+  }
+
+  .top-of-page{
+    width: 768px;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+    margin: 0;
+  }
+
+  .grid li {
+    width: 425px;
+
+  }
+
+}
+
