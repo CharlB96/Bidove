@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>True/False Game</title>
+
+</head>
+<body class="tf-body">
+  <div class="tf-container">
+    <div class="tf-question" id="tf-question">This is a sample statement. Is it true or false?</div>
+    <div class="tf-box-container">
+      <div class="tf-box true-box">True</div>
+      <div class="tf-box false-box">False</div>
+    </div>
+    <div class="message hidden" id="message">Congratulations! You're correct.</div>
+  </div>
+
+  <script>
+    const trueBox = document.querySelector(".true-box");
+    const falseBox = document.querySelector(".false-box");
+    const message = document.getElementById("message");
+
+    trueBox.addEventListener("click", handleAnswerSelection);
+    falseBox.addEventListener("click", handleAnswerSelection);
+
+    function handleAnswerSelection(event) {
+      const selectedBox = event.target;
+      const isCorrect = checkAnswer(selectedBox);
+
+      if (isCorrect) {
+        message.classList.remove("hidden");
+      } else {
+        selectedBox.classList.add("flash-red");
+        setTimeout(() => {
+          selectedBox.classList.remove("flash-red");
+        }, 500);
+      }
+    }
+
+    function checkAnswer(selectedBox) {
+      const question = document.getElementById("question").textContent;
+      // Update the condition to check the correct answer based on the statement
+      if (question === "This is a sample statement. Is it true or false?") {
+        return selectedBox.classList.contains("true-box");
+      } else {
+        // Add more conditions to check for other statements and their correct answers
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>
