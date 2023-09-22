@@ -1,7 +1,6 @@
 /*-------------------------------------------------------------------General styles*/
 
 html {
-  height: auto;
   margin: 0;
   padding: 0;
 }
@@ -9,6 +8,7 @@ html {
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f2f2f2;
+  height: 100vh;
 }
 
 .container {
