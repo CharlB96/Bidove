@@ -212,6 +212,7 @@ a:hover {
 
 .end-test-button:hover {
   background-color: #555;
+  text-decoration: none;
 }
 
 /*------------------------------------------------------------Lesson page styles*/
